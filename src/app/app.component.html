@@ -1,0 +1,5 @@
+<button routerLink="/"> Home </button>
+<button *ngIf="!isAuthenticated" (click)="oktaAuth.login()"> Login </button>
+<button *ngIf="isAuthenticated" (click)="oktaAuth.logout()"> Logout </button>
+
+<router-outlet></router-outlet>
